@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_confirm_event_card_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/temp_confirm_event_userInfo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/temp_confirm_event_imageView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+                android:id="@+id/temp_confirm_event_postUsername_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_confirm_event_imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Username"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/temp_confirm_event_userInfo_layout" >
+
+            <TextView
+                android:id="@+id/temp_confirm_event_title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/temp_confirm_event_content_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_confirm_event_title_textView"
+                android:fontFamily="sans-serif-condensed"
+                android:text="content"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/temp_confirm_event_date_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_confirm_event_content_textView"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Date"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/temp_confirm_event_availableSeat_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_confirm_event_date_textView"
+                android:fontFamily="sans-serif-condensed"
+                android:text="4"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

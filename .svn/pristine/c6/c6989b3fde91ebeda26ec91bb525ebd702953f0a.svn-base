@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Register"
+        android:textColor="#e16138"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/register_editText_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <EditText
+            android:id="@+id/register_phoneNumber_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:imeOptions="actionNext"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:phoneNumber="true"
+           
+            android:singleLine="true"
+            android:textColorHint="#CABBBBBB"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/register_username_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_phoneNumber_editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Username"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColorHint="#CABBBBBB"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/register_password_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_username_editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColorHint="#CABBBBBB"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/register_password_again_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password_editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Password Again"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColorHint="#CABBBBBB"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+        <ToggleButton 
+            android:id="@+id/register_toggleButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textOn="I am driver"
+            android:textOff="I am passenger"
+            android:layout_below="@id/register_password_again_editText"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#e16138"
+            android:textStyle="italic"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+        
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/register_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_editText_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:layout_marginLeft="-7dp"
+            android:id="@+id/register_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="#f2896f"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/register_confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textColor="#52bf90"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</RelativeLayout>

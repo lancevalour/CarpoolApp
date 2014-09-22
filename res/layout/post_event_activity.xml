@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/post_event_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:alpha="1"
+        android:background="#E16138" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Post Event"
+            android:textSize="22sp"
+             />
+
+        <Button
+            android:id="@+id/post_event_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="back"
+            android:textColor="#313131"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/post_event_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_event_title_layout"
+        android:layout_marginTop="30dp"
+        android:descendantFocusability="beforeDescendants"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/post_event_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/driver_event_card_selector"
+            android:descendantFocusability="afterDescendants"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/post_event_userInfo_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/post_event_imageView"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittext_background" />
+
+                <TextView
+                    android:id="@+id/post_event_postUsername_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/post_event_imageView"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Username"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/post_event_userInfo_layout" >
+
+                <TextView
+                    android:id="@+id/post_event_title_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Touch to add title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/post_event_content_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/post_event_title_textView"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Touch to add content"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/post_event_date_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/post_event_content_textView"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Touch to add date"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/post_event_availableSeat_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/post_event_date_textView"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Touch to add available seat"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/post_event_publish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/post_event_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="publish"
+        android:textColor="#e16138"
+        android:textSize="22sp" />
+
+</RelativeLayout>

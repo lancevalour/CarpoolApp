@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="WELCOME"
+        android:textColor="#e16138"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/login_editText_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/login_phoneNumber_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:imeOptions="actionNext"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColorHint="#CABBBBBB"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/login_password_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#CABBBBBB"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/login_editText_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Login"
+        android:textColor="#52bf90"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/forget_password_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Forget Password"
+        android:textColor="#f2896f"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/forget_password_button"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#f5c57f"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/explore_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/register_button"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Explore"
+        android:visibility="invisible"
+        android:textColor="#b7decf"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/login_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:alpha="0.4"
+        android:background="#e0e0e0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/login_progressBar"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="1"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</RelativeLayout>

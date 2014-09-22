@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#e16138"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Event Content"
+        android:textSize="22sp" />
+    <EditText
+        android:id="@+id/post_event_content_dialog_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="left|top"
+        android:inputType="textAutoCorrect|textMultiLine|textCapCharacters"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/post_event_content_dialog_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingRight="30dp"
+        android:text="200" />
+
+</LinearLayout>
